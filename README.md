@@ -7,9 +7,8 @@ A comprehensive, interactive web application for visualizing sorting algorithms 
 ### Core Functionality
 - **7 Sorting Algorithms**: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort, and Radix Sort
 - **Interactive Visualization**: Real-time animation of sorting processes with color-coded elements
-- **Array Generation**: Multiple array types including random, reversed, nearly sorted, and custom arrays
-- **Speed Control**: Adjustable animation speed from very fast to very slow
-- **Array Size Control**: Configurable array size from 5 to 200 elements
+- **Array Generation**: Multiple array types including random, reversed, and custom arrays
+- **Array Size Control**: Configurable array size from 5 to 30 elements
 
 ### Visual Features
 - **Color-coded Elements**:
@@ -114,8 +113,8 @@ npm start
 
 ### Basic Usage
 1. **Select an Algorithm**: Choose from the dropdown menu
-2. **Choose Array Type**: Select random, reversed, nearly sorted, or custom
-3. **Adjust Settings**: Set array size (5-200) and animation speed
+2. **Choose Array Type**: Select random, reversed, or custom
+3. **Adjust Settings**: Set array size (5-30)
 4. **Start Sorting**: Click "Start Sorting" to begin visualization
 5. **Control Playback**: Use pause/resume and reset buttons as needed
 

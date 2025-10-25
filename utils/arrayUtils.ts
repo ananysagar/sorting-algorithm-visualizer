@@ -2,7 +2,7 @@
  * Utility functions for array generation and manipulation
  */
 
-export type ArrayType = 'random' | 'reversed' | 'nearly-sorted' | 'custom';
+export type ArrayType = 'random' | 'reversed' | 'custom';
 
 export interface ArrayGenerationOptions {
   size: number;
@@ -25,23 +25,6 @@ export const generateReversedArray = (size: number): number[] => {
 };
 
 /**
- * Generate a nearly sorted array with some random swaps
- */
-export const generateNearlySortedArray = (size: number): number[] => {
-  const array = Array.from({ length: size }, (_, i) => i + 1);
-  
-  // Randomly swap 10% of elements
-  const swapCount = Math.floor(size * 0.1);
-  for (let i = 0; i < swapCount; i++) {
-    const index1 = Math.floor(Math.random() * size);
-    const index2 = Math.floor(Math.random() * size);
-    [array[index1], array[index2]] = [array[index2], array[index1]];
-  }
-  
-  return array;
-};
-
-/**
  * Generate array based on type
  */
 export const generateArray = (options: ArrayGenerationOptions): number[] => {
@@ -52,8 +35,6 @@ export const generateArray = (options: ArrayGenerationOptions): number[] => {
       return generateRandomArray(size);
     case 'reversed':
       return generateReversedArray(size);
-    case 'nearly-sorted':
-      return generateNearlySortedArray(size);
     case 'custom':
       return customArray || [];
     default:

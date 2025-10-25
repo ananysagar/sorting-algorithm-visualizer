@@ -43,7 +43,6 @@ export const SORTING_ALGORITHMS = [
 export const ARRAY_TYPES = [
   { value: "random", label: "Random" },
   { value: "reversed", label: "Reversed" },
-  { value: "nearly-sorted", label: "Nearly Sorted" },
   { value: "custom", label: "Custom" },
 ] as const;
 

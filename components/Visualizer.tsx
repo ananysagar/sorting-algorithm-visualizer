@@ -78,7 +78,7 @@ const Visualizer: React.FC = () => {
   const generateNewArray = useCallback(() => {
     const newArray = generateArray({
       size: state.arraySize,
-      type: state.arrayType as 'random' | 'reversed' | 'nearly-sorted' | 'custom',
+      type: state.arrayType as 'random' | 'reversed' | 'custom',
       customArray: state.arrayType === 'custom' && state.customArrayInput 
         ? validateCustomArray(state.customArrayInput).array 
         : undefined
